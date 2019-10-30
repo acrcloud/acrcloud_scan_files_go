@@ -27,7 +27,6 @@ func init() {
 		Dsn: "https://ea3b7e2dc92a4d989cdb17e3e098c140@sentry.io/1778424",
 	}); err != nil {
 		LogWarn(componentName, "Sentry initialization failed: ", err)
-		//LogWithComponent("sentry").Warning("Sentry initialization failed: %v\n", err)
 	}
 
 }

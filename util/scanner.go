@@ -24,7 +24,7 @@ const componentName = "util"
 
 func Scan(ctx *cli.Context) error {
 
-	var scanMode, url, targetType, filename, output, filters string
+	var scanMode, downloadUrl, targetType, filename, output, filters string
 	if ctx.IsSet("mode") {
 		scanMode = strings.ToLower(ctx.String("mode"))
 		logger.LogInfo(componentName, "SCAN MODE: "+scanMode)
@@ -33,7 +33,7 @@ func Scan(ctx *cli.Context) error {
 
 	if scanMode == "network" {
 		if ctx.IsSet("url") {
-			url = ctx.String("url")
+			downloadUrl = ctx.String("url")
 		} else {
 
 			err := errors.New("URL must be input")
@@ -67,7 +67,7 @@ func Scan(ctx *cli.Context) error {
 
 	}
 
-	file := InitFile(scanMode, filename, url)
+	file := InitFile(scanMode, filename, downloadUrl)
 
 	models.Config.Custom.Report.ReportPath = output
 

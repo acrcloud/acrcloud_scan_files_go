@@ -18,7 +18,6 @@ func logo() {
                                           
 `
 	fmt.Print(logo)
-	//var user = os.Getenv("USER")
 
 }
 
@@ -42,25 +41,5 @@ func main() {
 	if err != nil {
 		logger.LogFatal("main", "start error", err)
 	}
-
-	//startingTime := time.Now().UTC()
-	//fmt.Println(startingTime)
-	//
-	//time.Sleep(10 * time.Second)
-	//endingTime := time.Now().UTC()
-	//fmt.Println(endingTime)
-	//util.DoRecognize("yellow.mp4", 270, 10)
-
-	//if len(os.Args) > 1 {
-	//	res := util.RecognizeFile(util.InitFile(os.Args[1], ""))
-	//	//res := util.RecognizeFile(util.InitFile(os.Args[1],"http://192.168.10.122:1024/tiktok.mp3"))
-	//	util.ExportToCsv("", res)
-	//	//for _, v := range res {
-	//	//	spew.Dump(v)
-	//	//
-	//	//}
-	//} else {
-	//	fmt.Println("Usage: ./main filename")
-	//}
 
 }

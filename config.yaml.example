@@ -9,8 +9,9 @@ acrcloud:
 custom:
   is_custom_file: true
   report:
+    readable_time_format: true
     report_path:
-    report_delimiter: ,
+    report_delimiter: ","
     file_fields:
       - filename
       - source
@@ -34,7 +35,9 @@ custom:
       - custom_files_acr_id
       - custom_files_played_duration_in_second
     filters:
-      combine_filter: true
+      combine: true
+      fuzzy: false
+
 
 
 
