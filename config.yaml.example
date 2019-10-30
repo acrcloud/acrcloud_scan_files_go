@@ -1,0 +1,40 @@
+acrcloud:
+  host:
+  access_key:
+  access_secret:
+  recognize_type: audio
+  step_in_seconds: 10
+  recognize_length: 10
+
+custom:
+  is_custom_file: true
+  report:
+    report_path:
+    report_delimiter: ,
+    file_fields:
+      - filename
+      - source
+      - file_duration_in_millisecond
+      - start_time
+      - end_time
+      - status_code
+    music_fields:
+      - played_duration_in_second
+      - music_title
+      - music_album_name
+      - label
+      - isrc
+      - upc
+      - acr_id
+      - deezer_id
+      - spotify_id
+      - youtube_id
+    custom_files_fields:
+      - custom_files_title
+      - custom_files_acr_id
+      - custom_files_played_duration_in_second
+    filters:
+      combine_filter: true
+
+
+
