@@ -11,9 +11,18 @@
   Supported Format:
   
 ```  
- Audio: mp3, wav, m4a, flac, aac, amr, ape, ogg ...<br>
+ Audio: mp3, wav, m4a, flac, aac, amr, ape, ogg ...
  Video: mp4, mkv, wmv, flv, ts, avi ...
 ```
+
+## Feature
+
+-   [x] Scan file
+-   [x] Scan network file
+-   [x] Export the report
+-   [ ] Scan folder
+-   [ ] Custom report fields
+-   [ ] Filter report result
 
 
 ## Usage
@@ -25,6 +34,7 @@ Before you use this tool, you must have acrcloud host, access_key and access_sec
 If you haven't have these, you can [register one](https://console.acrcloud.com/signup).
 
 **Rename config.yaml.example to config.yaml and fill in host, key and secret**
+
 ```diff
 -  host:
 -  access_key:
@@ -55,11 +65,3 @@ Scan a file and save the result:
 ./main scan -f ~/media_files/test.mp4 -o ~/media_files/report.csv
 ```
 
-## Feature
-
--   [x] Scan file
--   [x] Scan network file
--   [x] Export the report
--   [ ] Scan folder
--   [ ] Custom report fields
--   [ ] Filter report result
